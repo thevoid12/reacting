@@ -11,23 +11,31 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>
 )
 
-function Header() {
-    return (
-        <header>
-            <img src={reactLogo} width="40px" alt="React logo" />
-        </header>
-    )
-}
-
 function Page() {
     return (
         <>
             <Header />
-            <Main/>
+            <Main />
             <Footer />
         </>
     )
 }
+
+function Header() {
+    return (
+        <header  className='nav'>
+            <img src={reactLogo} width="40px" alt="React logo" />
+            <nav className="nav-in">
+                <ul className="nav-header">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
 
 function Main(){
   return(
