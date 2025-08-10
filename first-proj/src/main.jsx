@@ -8,21 +8,9 @@ import MainContent from './components/MainContent.jsx'
 import Footer  from './components/Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <Page />
+    <App />
   </StrictMode>
 )
-
-function Page() {
-    return (
-        <>
-            <Header />
-            <MainContent />
-            <Footer />
-        </>
-    )
-}
-
 
 
 
